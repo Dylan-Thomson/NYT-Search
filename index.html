@@ -14,58 +14,42 @@
    <script src="assets/script.js"></script>
 </head>
 <body>
-<div class="container" id="page">
-   <div class="row" id="logo">
-       <img src="assets/NYT_Logo.png">
-   </div>
-   <div class="row" class="">
-       <h1>Search API</h1>
-   </div>
-   <div class="container">
-       <div class="row">
-           <form class="navbar-form pull-left" action="">
-                   <input type="text" class="span2" id="search-value">
-                   <button type="" class="btn" id="search">Submit</button>
-               </form>
-       </div>
-   </div>
-   <div class="row" id="result" >
-           
-   </div>
+
+<div class="container">
+    <div class="text-center">
+        <img src="assets/NYT_Logo.png">
+        <h1 class="text-center">Search API</h1>
+    </div>
+    <form>
+        <div class="form-group">
+            <label for="search-value">Search Term:</label>
+            <input class="form-control" type="text" id="search-value">
+        </div>
+        <div class="form-group">
+            <label for="number-records">Number of Records to Retrieve:</label>
+            <input class="form-control" type="number" id="number-records" min="1" max="10" value="5">
+        </div>
+        <div class="form-group">
+            <label for="start-date">Start Date (Optional):</label>
+            <input class="form-control" type="date" id="start-date">
+        </div>
+        <div class="form-group">
+            <label for="end-date">End Date (Optional):</label>
+            <input class="form-control" type="date" id="end-date">
+        </div>
+        <!-- <div class="form-group">
+            <label for="sort-by">Sort by:</label>
+            <select class="form-control" id="sort-by">
+                <option value="newest">Newest</option>
+                <option value="oldest">Oldest</option>
+            </select>
+        </div> -->
+        <button type="submit" class="btn btn-primary" id="search-btn">Submit</button>
+        <button class="btn btn-danger" id="clear-btn">Clear</button>
+    </form>
+    
+    <div id="result"></div>
 </div>
 
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>NYT Search</title>
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-</head>
-<body>
-    <div class="container" id="page">
-       <div class="row" id="logo">
-           <img src="assets/NYT_Logo.png">
-       </div>
-       <div class="row" class="">
-           <h1>Search API</h1>
-       </div>
-       <div class="container">
-           <div class="row">
-               <form class="navbar-form pull-left">
-                       <input type="text" class="span2">
-                       <button type="submit" class="btn" id="search">Submit</button>
-                   </form>
-           </div>
-       </div>
-       <div class="row" id="result" >
-               TEST RESULT
-       </div>
-    </div>
-    </body>
-</html> -->
+</body>
+</html> 
