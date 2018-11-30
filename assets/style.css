@@ -1,0 +1,27 @@
+#logo {
+    max-height: 50%;
+ }
+ 
+ #page {
+    text-align: center;
+ }
+ 
+ body {
+    background-image: url("statue.jpg");
+    background-size: cover;
+ }
+ 
+ h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif
+ }
+ 
+ #results {
+    opacity: 1;
+ }
+ 
+ #result {
+    background-color:rgba(192,192,192,0.5);
+    text-align: left;
+    font-size: 2em;
+ 
+ }
